@@ -10,8 +10,8 @@ fn main() {
 
     for (i, c) in content.chars().enumerate() {
         match c {
-            '(' => x = x + 1,
-            ')' => x = x - 1,
+            '(' => x += 1,
+            ')' => x -= 1,
              _  => (),
         }
 
@@ -22,6 +22,8 @@ fn main() {
     }
     println!("{x}");
 }
+
+// Bad Code :(
 
     //fn main() {
     //
